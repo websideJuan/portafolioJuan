@@ -78,7 +78,7 @@ ul{
     transition: transform .5s ease-in-out;
 }
 
-.nav__center.showMenu{
+.d-none{
     transform: translateX(0%);
 
 }
