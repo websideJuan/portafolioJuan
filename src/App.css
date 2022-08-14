@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+ul{
+    list-style: none;
+}
+
+.btn{
+    display: block;
+    padding: 12px 32px;
+    border-radius: 10px;
+    border: 1px solid;
+}
+
+.navegacion{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 1em;
+    background-color: #0000008c;
+}
+
+.cta{
+    padding: 10px;
+    border: 0px solid;
+    background-color: transparent;
+    border-radius: 8px;
+}
+
+.cta i{
+    width: 100%;
+    color: white;
+}
+
+.cta-menu{
+    position: relative;
+    z-index: 1;
+}
+
+.cta-search{
+    font-size: 14px;
+}
+
+.nav__logo{
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.nav__logo-para{
+    color: white;
+    font-weight: 300;
+}
+
+.icons__menu{
+    display: absolute;
+    gap: 10px;
+    font-size: 22px;
+}
+
+.nav__center{
+    position: fixed;
+    text-transform: uppercase;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(0deg, #4169e18c 0%, #ffc0cb8c 80%);
+    transform: translateX(-110%);
+    transition: transform .5s ease-in-out;
+}
+
+.nav__center.showMenu{
+    transform: translateX(0%);
+
+}
+
+.nav-item{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    width: 60%;
+    background-color: white;
+    padding: 64px 8px;
+    color: black;
+    font-size: 14px;
+}
+
+.nav-link{
+    text-decoration: none;
+    display: inline-block;
+}
